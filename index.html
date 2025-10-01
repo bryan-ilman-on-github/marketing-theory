@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Theory Notes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar - Table of Contents -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h1>Notes</h1>
+            </div>
+
+            <div class="toc">
+                <!-- General Design Theory Section -->
+                <div class="section">
+                    <div class="section-title" onclick="toggleSection('general-design')">
+                        <span class="arrow">▶</span>
+                        <span>General Design Theory</span>
+                    </div>
+                    <div class="section-content" id="general-design">
+
+                        <!-- From First Principles Subsection -->
+                        <div class="subsection">
+                            <div class="subsection-title" onclick="toggleSubsection('first-principles')">
+                                <span class="arrow">▶</span>
+                                <span>From First Principles</span>
+                            </div>
+                            <div class="subsection-content" id="first-principles">
+                                <a href="#" class="note-link" onclick="loadNote('notes/general-design-theory/first-principles/three-essential-questions.md'); return false;">
+                                    The Three Essential Questions to Ask Before Creating or Evaluating a Design
+                                </a>
+                                <a href="#" class="note-link" onclick="loadNote('notes/general-design-theory/first-principles/who-is-the-real-audience.md'); return false;">
+                                    Who Is the Real Audience?
+                                </a>
+                                <a href="#" class="note-link" onclick="loadNote('notes/general-design-theory/first-principles/demographic-basics.md'); return false;">
+                                    Demographic Basics
+                                </a>
+                                <a href="#" class="note-link" onclick="loadNote('notes/general-design-theory/first-principles/optimal-exists-master-sop.md'); return false;">
+                                    Optimal Exists Master SOP List
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Applications Subsection -->
+                        <div class="subsection">
+                            <div class="subsection-title" onclick="toggleSubsection('applications')">
+                                <span class="arrow">▶</span>
+                                <span>Applications</span>
+                            </div>
+                            <div class="subsection-content" id="applications">
+                                <a href="#" class="note-link" onclick="loadNote('notes/general-design-theory/applications/johnnys-iron-laws.md'); return false;">
+                                    Johnny's Iron Laws of Design
+                                </a>
+                                <a href="#" class="note-link" onclick="loadNote('notes/general-design-theory/applications/johnnys-random-thoughts.md'); return false;">
+                                    Johnny's Random Design Thoughts and Principles
+                                </a>
+                                <a href="#" class="note-link" onclick="loadNote('notes/general-design-theory/applications/design-copy-checklist.md'); return false;">
+                                    Design & Copy Checklist Before Johnny Sees It
+                                </a>
+                                <a href="#" class="note-link" onclick="loadNote('notes/general-design-theory/applications/great-things-master-list.md'); return false;">
+                                    Great Things Master List
+                                </a>
+                                <a href="#" class="note-link" onclick="loadNote('notes/general-design-theory/applications/bad-design-examples.md'); return false;">
+                                    Examples of Bad/Shitty Design According to Johnny SOP
+                                </a>
+                                <a href="#" class="note-link" onclick="loadNote('notes/general-design-theory/applications/branding-theory-master-sop.md'); return false;">
+                                    Branding Theory Master SOP
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Design Learning Subsection -->
+                        <div class="subsection">
+                            <div class="subsection-title" onclick="toggleSubsection('design-learning')">
+                                <span class="arrow">▶</span>
+                                <span>Design Learning</span>
+                            </div>
+                            <div class="subsection-content" id="design-learning">
+                                <a href="#" class="note-link" onclick="loadNote('notes/general-design-theory/design-learning/idea-sex.md'); return false;">
+                                    Idea Sex (Creativity SOP)
+                                </a>
+                                <a href="#" class="note-link" onclick="loadNote('notes/general-design-theory/design-learning/design-misc-learning.md'); return false;">
+                                    Design Misc Learning Master SOP List
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Right Content Area -->
+        <main class="content">
+            <div class="content-wrapper">
+                <div id="note-content" class="note-content">
+                    <div class="welcome-message">
+                        <h2>Welcome to Marketing Theory Notes</h2>
+                        <p>Select a topic from the left sidebar to begin reading.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
